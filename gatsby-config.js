@@ -6,5 +6,14 @@ module.exports = {
     description: `A boilerplate by SLD`,
     author: `@sld`
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`]
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/watermelon.png`
+      }
+    }
+  ]
 };

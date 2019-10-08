@@ -1,7 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-
-import Header from "./header"
+import React from "react";
+import PropTypes from "prop-types";
+import Header from "./header";
 
 const Layout = ({ children }) => {
   return (
@@ -9,18 +8,22 @@ const Layout = ({ children }) => {
       <Header />
       <main>{children}</main>
       <footer className="is-white-bg is-grey margin-2 footer opacity-70">
-        Made with{" "}
+        Boilerplate made with{" "}
         <span role="img" aria-label="love">
           ❤️
         </span>{" "}
-        by Sam Larsen-Disney
+        by{" "}
+        <a href="https://sld.codes" target="_blank" rel="noopener noreferrer">
+          sld.codes
+        </a>
+        . Happy Hacking.
       </footer>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

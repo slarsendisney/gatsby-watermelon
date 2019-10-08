@@ -98,3 +98,14 @@ footer {
     padding: 10px;
     background-color: rgb(34, 45, 70);
 }
+
+.link {
+    transition: all .2s ease-in-out;
+    font-weight: 100;
+    text-decoration: none;
+    color: #2E4052;
+}
+.link:hover {
+    color: rgb(234, 78, 103) !important;
+    transform: scale(1.05);
+}

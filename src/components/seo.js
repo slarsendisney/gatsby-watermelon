@@ -25,7 +25,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang
       }}
-      title={"SLD | " + title}
+      title={"Watermelon | " + title}
       meta={[
         {
           name: `description`,
