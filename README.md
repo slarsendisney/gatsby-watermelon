@@ -1,2 +1,3 @@
-# gatsby-watermelon
-A gatsby/node/socket boilerplate 
+# 🍉 Watermelon
+
+A gatsby/node/socket boilerplate.

@@ -1,0 +1,100 @@
+//fonts 
+@import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
+
+//files
+@import "./vars.scss";
+@import "./layout.scss";
+@import "./colors.scss";
+@import "./opacity.scss";
+@import "./hero.scss";
+@import "./logo.scss";
+@import "./margin_padding.scss";
+
+@for $i from 1 through 6 {
+    h#{7 - $i} {
+        font-size: $i * 1.4em;
+    }
+}
+
+body {
+    margin: 0px;
+}
+
+h1 { 
+    display: block;
+    font-size: 2em;
+    font-family: Lato;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-family: Lato;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    font-family: Lato;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+h4 { 
+    display: block;
+    font-size: 1em;
+    font-family: Lato;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+h5 { 
+    display: block;
+    font-size: .83em;
+    font-family: Lato;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+h6 { 
+    display: block;
+    font-size: .67em;
+    font-family: Lato;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+hr {
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+}
+
+footer {
+    text-align: center;
+    font-family: Lato;
+    padding: 10px;
+    background-color: rgb(34, 45, 70);
+}
