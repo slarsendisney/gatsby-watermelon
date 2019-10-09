@@ -1,10 +1,18 @@
 {
-  "name": "sld-personal-site",
+  "name": "gatsby-watermelon",
   "private": true,
-  "description": "SLD: Personal Site",
+  "description": "A GatsbyJS boilerplate with Redux and socket.io all wrapped up nicely in an Express server.",
   "version": "0.1.0",
   "author": "Sam Larsen-Disney <s.larsendisney@gmail.com>",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
     "flexboxgrid-sass": "^8.0.5",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.24",
@@ -23,18 +31,20 @@
     "gatsby-source-filesystem": "^2.1.29",
     "gatsby-transformer-remark": "^2.6.27",
     "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
     "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-blur-image-loader": "^0.2.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-socket.io": "^1.4.0",
     "sass-flex-mixin": "^1.0.3",
     "sharp": "^0.23.1",
+    "socket.io-client": "^2.3.0",
     "typescript": "^3.6.3"
-  },
-  "devDependencies": {
-    "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby",
@@ -46,7 +56,7 @@
     "develop": "gatsby develop",
     "deploy": "gatsby build && firebase deploy",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run hello && npm run develop",
+    "start": "concurrently 'npm run hello && gatsby develop -o -p 5051' 'supervisor --watch server/index.js server/index.js'",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "hello": "node scripts/hello.js"

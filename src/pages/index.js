@@ -25,6 +25,7 @@ export default function Start() {
                   target="_blank"
                   className="link"
                   rel="noopener noreferrer"
+                  key={item.label}
                 >
                   {`${index === 0 ? ` ` : ``}${item.label}${
                     Places.length !== index + 1 ? " / " : " "
