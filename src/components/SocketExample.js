@@ -55,9 +55,12 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-const ConnectedSocketExample = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SocketExample);
+const ConnectedSocketExample =
+  typeof window !== `undefined`
+    ? connect(
+        mapStateToProps,
+        mapDispatchToProps
+      )(SocketExample)
+    : SocketExample;
 
 export default ConnectedSocketExample;
