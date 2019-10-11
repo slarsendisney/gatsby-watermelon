@@ -1,0 +1,15 @@
+.link, .link-reverse {
+    transition: all .2s ease-in-out;
+    font-weight: 100;
+    text-decoration: none;
+    color: #2E4052;
+}
+.link:hover {
+    color: rgb(234, 78, 103) !important;
+    transform: scale(1.05);
+}
+
+.link-reverse:hover {
+  color: #fff !important;
+  transform: scale(1.05);
+}

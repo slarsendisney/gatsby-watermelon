@@ -25,7 +25,41 @@ _"Express is a minimal and flexible Node.js web application framework that provi
 ##### Project Structure
 
 ```
-
+gatsby-watermelon
+scripts
+┃ hello.js
+┣server
+┃ ┗index.js
+┗src
+  ┣ components
+  ┃ ┣ Hero.js
+  ┃ ┣ SocketExample.js
+  ┃ ┣ header.js
+  ┃ ┣ layout.js
+  ┃ ┗ seo.js
+  ┣ data
+  ┃ ┗ Start.json
+  ┣ images
+  ┃ ┣ watermelon.png
+  ┃ ┗ watermelon.svg
+  ┣ pages
+  ┃ ┣ 404.js
+  ┃ ┗ index.js
+  ┣ state
+  ┃ ┣ createStore.js
+  ┃ ┗ wrapWithProvider.js
+  ┗ styles
+  ┃ ┣ _flex.scss
+  ┃ ┣ border.scss
+  ┃ ┣ button.scss
+  ┃ ┣ colors.scss
+  ┃ ┣ global.scss
+  ┃ ┣ hero.scss
+  ┃ ┣ layout.scss
+  ┃ ┣ link.scss
+  ┃ ┣ margin_padding.scss
+  ┃ ┣ opacity.scss
+  ┃ ┗ vars.scss
 ```
 
 This boilerplate was built with ❤️ by SLD. I try my best to maintain the project but if you notice any issues, or if you need any help - [hit me up!](sld.codes)

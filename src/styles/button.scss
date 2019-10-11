@@ -1,0 +1,13 @@
+.btn {
+    background-color: rgb(234, 78, 103);
+    color: white;
+    max-width: 250px;
+    padding:15px;
+    text-align: center;
+    font-family: Lato;
+}
+.btn:hover {
+    color:  #2E4052;
+    background-color: white;
+    cursor: pointer;
+}

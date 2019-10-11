@@ -6,8 +6,9 @@
 @import "./layout.scss";
 @import "./colors.scss";
 @import "./opacity.scss";
+@import "./button.scss";
+@import "./border.scss";
 @import "./hero.scss";
-@import "./logo.scss";
 @import "./margin_padding.scss";
 
 @for $i from 1 through 6 {
@@ -99,44 +100,5 @@ footer {
     background-color: rgb(34, 45, 70);
 }
 
-.link, .link-reverse {
-    transition: all .2s ease-in-out;
-    font-weight: 100;
-    text-decoration: none;
-    color: #2E4052;
-}
-.link:hover {
-    color: rgb(234, 78, 103) !important;
-    transform: scale(1.05);
-}
 
-.link-reverse:hover {
-  color: #fff !important;
-  transform: scale(1.05);
-}
 
-.btn {
-  background-color: rgb(234, 78, 103);
-  color: white;
-  max-width: 250px;
-  padding:15px;
-  text-align: center;
-  font-family: Lato;
-  
-}
-.btn:hover {
-  color:  #2E4052;
-  background-color: white;
-  cursor: pointer;
-}
-
-.border-radius {
-  border-radius: 3px;
-  
-  font-size: 1rem;
-       
-        overflow-x: auto;;
-       line-height: 2rem;
-        padding: 1.45rem;
-        word-wrap: break-word;
-}
