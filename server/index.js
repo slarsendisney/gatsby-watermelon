@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const compression = require("compression");
+const io = require("socket.io")(server);
 
 const dev = !(process.env.NODE_ENV === "production");
 
@@ -36,7 +37,6 @@ server.listen(port, () =>
   console.log(`🍉 Up and running on http://localhost:${port}`)
 );
 
-const io = require("socket.io")(server);
 io.on("connection", function(socket) {
   console.log("socket connected: " + socket.id);
   socket.on("action", action => {
