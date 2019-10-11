@@ -62,4 +62,4 @@ scripts
      ┗ vars.scss
 ```
 
-This boilerplate was built with ❤️ by SLD. I try my best to maintain the project but if you notice any issues, or if you need any help - [hit me up!](sld.codes)
+This boilerplate was built with ❤️ by SLD. I try my best to maintain the project but if you notice any issues, or if you need any help - [hit me up!](https://sld.codes)
