@@ -10,6 +10,13 @@ app.use(compression());
 app.use(express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 
+if (!dev) {
+  io.configure(function() {
+    io.set("transports", ["xhr-polling"]);
+    io.set("polling duration", 10);
+  });
+}
+
 if (dev) {
   require("dotenv").config();
   const proxy = require("http-proxy-middleware");
