@@ -2,6 +2,12 @@
 
 A **GatsbyJS** boilerplate with **Redux** and **socket.io** all wrapped up nicely in an **Express** server. This project is meant to help people 
 
+### Quick Start
+
+```
+npx -p yo -p generator-sld -- yo sld:watermelon
+```
+
 ##### What is Gatsby?
 
 _"Gatsby is a blazing fast modern site generator for React."_ 
@@ -20,7 +26,6 @@ _"Express is a minimal and flexible Node.js web application framework that provi
 
 [Read the docs.](https://expressjs.com/en/starter/hello-world.html)
 
-### Getting Started
 
 ##### Project Structure
 
