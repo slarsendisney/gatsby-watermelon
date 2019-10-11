@@ -29,14 +29,11 @@ server.listen(port, () =>
   console.log(`🍉 Up and running on http://localhost:${port}`)
 );
 
-const io = require("socket.io")(server);
-
-if (!dev) {
-  io.configure(function() {
-    io.set("transports", ["xhr-polling"]);
-    io.set("polling duration", 10);
-  });
-}
+const io = !dev
+  ? require("socket.io")(server)({
+      transports: ["xhr-polling"]
+    })
+  : require("socket.io")(server);
 
 io.on("connection", function(socket) {
   console.log("socket connected: " + socket.id);
