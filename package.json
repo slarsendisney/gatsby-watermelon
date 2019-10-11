@@ -54,7 +54,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && firebase deploy",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "concurrently 'npm run hello && gatsby develop -o -p 5051' 'supervisor --watch server/index.js server/index.js'",
     "serve": "gatsby serve",
