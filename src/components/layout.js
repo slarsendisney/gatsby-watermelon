@@ -1,23 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Header from "./header";
+import { Header, Footer } from "sld-component-library";
+import Logo from "../images/watermelon.png";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Header logo={Logo} />
       <main>{children}</main>
-      <footer className="is-white-bg is-grey margin-2 footer">
-        Boilerplate made with{" "}
-        <span role="img" aria-label="love">
-          ❤️
-        </span>{" "}
-        by{" "}
-        <a href="https://sld.codes" target="_blank" rel="noopener noreferrer">
-          sld.codes
-        </a>
-        . Happy Hacking.
-      </footer>
+      <Footer />
     </>
   );
 };

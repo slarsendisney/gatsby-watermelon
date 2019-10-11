@@ -43,6 +43,7 @@
     "redux-socket.io": "^1.4.0",
     "sass-flex-mixin": "^1.0.3",
     "sharp": "^0.23.1",
+    "sld-component-library": "^0.1.5",
     "socket.io-client": "^2.3.0",
     "typescript": "^3.6.3"
   },
