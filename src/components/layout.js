@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <main>{children}</main>
-      <footer className="is-white-bg is-grey margin-2 footer opacity-70">
+      <footer className="is-white-bg is-grey margin-2 footer">
         Boilerplate made with{" "}
         <span role="img" aria-label="love">
           ❤️

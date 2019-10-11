@@ -16,6 +16,5 @@ let store = applyMiddleware(socketIoMiddleware)(createStore)(reducer);
 store.subscribe(() => {
   console.log("new client state", store.getState());
 });
-store.dispatch({ type: "server/hello", data: "Hello!" });
 
 export default store;
