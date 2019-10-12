@@ -1,6 +1,6 @@
 # 🍉 Gatsby Watermelon Boilerplate
 
-A **GatsbyJS** boilerplate with **Redux** and **socket.io** all wrapped up nicely in an **Express** server. This project is meant to help people 
+A **GatsbyJS** boilerplate with **Redux** and **socket.io** all wrapped up nicely in an **Express** server. 
 
 ### Quick Start
 
