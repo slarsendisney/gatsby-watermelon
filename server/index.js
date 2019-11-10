@@ -29,7 +29,7 @@ server.listen(port, () =>
   console.log(`🍉 Up and running on http://localhost:${port}`)
 );
 
-const io = dev
+const io = !dev
   ? require("socket.io")(server, {
       transports: ["xhr-polling"]
     })
